@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <!--Header-->
+    <header>
+        <div class ="logo">
+            <h2>Note app</h2>
+        </div>
+        <div class="search">
+            <input type="text" id="search" placeholder="search">
+        </div>
+    </header>
+
+    <div class="container" id="container-body">
+        <div class="form">
+            <form action="" id="add-frm">
+                <input type="text" id="n-title" placeholder="Title...">
+                <textarea id="n-body" placeholder="Note body..."></textarea>
+                <button type="submit" id="save">save</button>
+                <button type="reset" id="reset">reset</button>
+            </form>
+        </div>
+        <!--table-->
+        <div class="table" id="table-data">
+            <table id="items">
+                <tr>
+                    <th>Title</th>
+                    <th>view</th>
+                    <th>Delete</th>
+                </tr>
+               
+
+            </table>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

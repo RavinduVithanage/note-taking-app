@@ -1,0 +1,214 @@
+/*....reset...*/
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+
+    background-position: center;
+    block-size: cover;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+button {
+
+    cursor: pointer;
+    border: none;
+    padding: 5px 8px;
+    font-size: 0.8rem;
+    transition: all 0.3s ease-in;
+
+}
+button:hover{
+
+    background-color: #fff !important;
+    color: #000 !important;
+}
+::placeholder{
+
+    font-size: 0.9rem ;
+} /*...header....*/
+
+header{
+
+    background-color: darkgoldenrod;
+    max-width: 650 px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    
+}
+header .logo{
+
+    background-color: #fff;
+    color: #706bad;
+    padding: 5px;
+
+}
+header .search input{
+
+    width: 250px;
+    height: 30px;
+    padding: 16px 10px;
+
+}
+
+.container{
+
+    background-color: transparent;
+    max-width: 650px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    border: 5px  darkgoldenrod solid ;
+}
+
+.container .form{
+
+    background-color: darkgray;
+    width: 40%;
+    padding: 10px;
+    margin-right: 10px;
+
+}
+.container .form form{
+
+    margin: auto;
+    background-color: darkgoldenrod;
+    padding: 12px;
+}
+.container .form form h3{
+
+    margin-bottom: 5px;
+    color: #fff;
+}
+.container .form input{
+
+   width: 100%;
+   padding: 15px 10px;
+   height: 20px;
+   margin-bottom: 10px;
+}
+.container .form textarea{
+
+    width: 100%;
+    padding: 7px 10px;
+    resize: none;
+ }
+
+ .container .form button{
+
+    width: 100%;
+    margin-top: 10px;
+ }
+ .container .form  #save{
+
+    background-color: darkgoldenrod;
+    color: bisque;
+    
+ }
+ .container .form  #reset{
+
+    background-color: darkgoldenrod;
+    color: bisque;
+    
+ }
+ .container .table {
+
+     background-color:darkgray;
+     width: 50%;
+     max-height: 260px;
+     padding: 10px;
+     margin-left: 10px;
+     overflow:auto;
+ }
+
+ .container .table table{
+
+    background-color:  darkgoldenrod;
+    width: 100%;
+    border-collapse: collapse;
+
+}
+.container .table .note-body{
+
+    display: none; ;
+}
+.container .table table,.container .table table td{
+
+    border: 2px #fff solid;
+    padding: 5px;
+
+}
+.container .table table th{
+
+   padding: 5px;
+   text-align: left;
+   background-color: dimgrey;
+
+}
+
+.container .table table .save,.container .table table .reset{
+
+   text-align: center;
+ 
+ }
+
+.container .table table th:last-child,.container .table table th:last-child(2){
+
+   
+    text-align: center;
+}
+
+.container .table table td{
+
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.container .table table .save{
+
+   background-color: darkgreen;
+   color: #fff;
+  
+}
+.container .table table .reset{
+
+    background-color: #810404;
+    color: #fff;
+  
+}
+@media(max-width:600px){
+
+    header{
+        flex-direction: column;
+    }
+    header .logo{
+        margin-bottom: 10px;
+    }
+    .container{
+
+        flex-direction: column;
+        align-items: center;
+    }
+    .container .form,.container .table{
+
+        margin-bottom: 10px;
+        min-width: 250px;
+        margin-left: 0;
+        margin-right: 0;
+
+    }
+    
+}
+ 
+
